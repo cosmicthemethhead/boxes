@@ -1,5 +1,9 @@
 build:
-	gcc ./src/*.c -o ./build/boxes.o
-	@./build/boxes.o
+	@ echo "-- GENERATING --"
+	@ cmake -S . -B build -G "Ninja"
+	@ echo "-- BUILDING --"
+	@ cd build; ninja
+	@ echo "-- RUNNING --"
+	@ cd build; ./boxes
 
 .PHONY: all build clean
