@@ -1,4 +1,6 @@
-#pragma once
+#ifndef ENTITY_H
+#define ENTITY_H
+
 #include "util/vec2.h"
 
 // HACK: reserve 4 bytes for chars that could use 1
@@ -7,3 +9,5 @@ typedef struct {
   char icon[4];
   vec2i pos;
 } entity;
+
+#endif
