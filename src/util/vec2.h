@@ -1,6 +1,6 @@
 #pragma once
 
-typedef struct vec2i {
+typedef struct {
   short x;
   short y;
 } vec2i;
