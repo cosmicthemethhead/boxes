@@ -3,14 +3,21 @@
 
 #include "gfx/canvas.h"
 #include "util/entity.h"
+#include "util/scene.h"
+
+struct Scene scene;
 
 int main (void) {
   struct entity e = {"ﱢ", {2, 2}};
   // create new canvas in heap memory
   struct canvas c = { 6, 6 };
 
-  // canvas draw loop
+  init_entities(&scene, 1);
+  insert_entity(&scene, e);
+
   canvas_draw(&c);
+
+  free_entities(&scene);
 
   return 0;
 }
