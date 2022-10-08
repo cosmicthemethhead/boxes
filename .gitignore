@@ -13,3 +13,4 @@ build.ninja
 .ninja_log
 boxes
 .cache
+build
