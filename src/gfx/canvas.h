@@ -8,6 +8,6 @@ struct canvas {
   short width;
 };
 
-void canvas_draw(struct canvas *self);
+void init_canvas(struct canvas *self);
 
 #endif
