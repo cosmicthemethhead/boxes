@@ -19,7 +19,7 @@ int main (void) {
   init_entities(&scene, 1);
   insert_entity(&scene, e);
 
-  canvas_draw(&c);
+  init_canvas(&c);
 
   free_entities(&scene);
 
